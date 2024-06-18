@@ -20,7 +20,7 @@ def decrypt_image(image_path: str, key: int) -> None:
         for y in range(height):
             if random.random() < swap_chance:
                 swap_x = (x - random.randint(-5, 5)) % width
-                swap_y = (y + random.randint(-5, 5)) % height
+                swap_y = (y - random.randint(-5, 5)) % height
 
                 temp_pixel = pixels[swap_x, swap_y]
                 pixels[x, y] = pixels[swap_x, swap_y]
