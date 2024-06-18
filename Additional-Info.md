@@ -32,7 +32,7 @@
     1. *Permutation Techniques* ⇒ Rearranging pixels based on complex mathematical functions derived from the secret key
     2. *Substitution Techniques* ⇒ Replacing pixel values with new values based on a key-driven lookup table.
 
-# ALgorithm
+# Algorithm
 ## Encryption
 1. Import Libraries
 2. Read Image
