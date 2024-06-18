@@ -8,7 +8,7 @@ def main():
         print("2. Decrypt Image")
         print("3. Exit")
 
-        opt = int("Enter your choice (1-3): ")
+        opt = int(input("Enter your choice (1-3): "))
         
         if opt == 1:
             image_path = input("Enter image path: ")
