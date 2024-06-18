@@ -44,3 +44,19 @@ python main.py
   - Program will decrypt the specified encrypted image using the provided key and save the decrypted version as "decrypted.org"
 
 ## Sample Use
+
+![image](https://github.com/Amogha-Upadyaya/PRODIGY_CS_02/assets/120311753/302b7db9-1d4e-4c3a-a8d5-cd713accf734)
+
+**Original Image**
+
+![Sample_Original_Image](https://github.com/Amogha-Upadyaya/PRODIGY_CS_02/assets/120311753/a49fb5d5-5ed6-4f3d-a1dc-7a0e9ed90d36)
+
+**Encrypted Image**
+
+![encrypted](https://github.com/Amogha-Upadyaya/PRODIGY_CS_02/assets/120311753/c58591c1-b11f-4e81-9baa-a90a7a50ab1f)
+
+
+**Decrypted Image**
+
+![decrypted](https://github.com/Amogha-Upadyaya/PRODIGY_CS_02/assets/120311753/49e4fe0d-a07c-47de-ad44-bef288e93402)
+
