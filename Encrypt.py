@@ -38,6 +38,6 @@ def encrypt_image(image_path: str, key: int) -> None:
     print("Image Encryption Successful!")
 
     if os.name == 'nt':
-        os.startfile("encypted.png")
+        os.startfile("encrypted.png")
     else:
         subprocess.call(["open", "encrypted.png"])
