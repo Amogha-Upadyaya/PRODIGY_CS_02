@@ -15,14 +15,24 @@ def encrypt_image(image_path: str, key: int) -> None:
     width, height = image.size
     pixels = image.load()
 
-    random.seed(key)
+    #random.seed(key)
+
+    swap_sequence = []
+    for i in range(256):
+        swap_sequence.append((i + key) % width)
+        swap_sequence.append((i - key) % height)
 
     swap_chance = 0.2
     for x in range(width):
         for y in range(height):
-            if random.random() < swap_chance:
-                swap_x = (x + random.randint(-5, 5)) % width
-                swap_y = (y + random.randint(-5, 5)) % height
+            #if random.random() < swap_chance:
+            if len(swap_sequence) > 0 and random.random() < swap_chance:
+                swap_index = 0
+                #swap_x = (x + random.randint(-5, 5)) % width
+                swap_x = swap_sequence[swap_index]
+                #swap_y = (y + random.randint(-5, 5)) % height
+                swap_y = swap_sequence[swap_index + 1]
+                swap_sequence = swap_sequence[2:]
 
                 temp_pixel = pixels[x, y]
                 pixels[x, y] = pixels[swap_x, swap_y]
